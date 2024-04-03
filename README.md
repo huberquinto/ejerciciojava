@@ -14,7 +14,7 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 * En una carpeta del tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
 realizar la descarga como zip.
 
-![Descargar imagen](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)
+![Descagar zip con codigo fuente](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/descargar_fuentes.png)
 * Luego mediante linea de comandos ejecutar el siguiente comando maven:  mvn clean install
 * Seguidamente levantar la aplicacion ejecutando: mvn spring-boot:run
 
