@@ -4,9 +4,10 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 
 ### Requisitos para levantar la aplicación ###
 
-* Tener instalado Java JDK 17
-* Tener installado Maven
-* Tener instalado git para descargar fuentes.
+* Tener instalado Java JDK 17 [https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html]
+* Tener installado Maven 3.6.0 + [https://maven.apache.org/docs/history.html]
+* Tener instalado git para descargar fuentes. [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
+* Tener instalado el comando curl [https://curl.se/windows/] o en lunux ejecutar comando: sudo apt-get install curl
 
 ### Pasos para levantar la aplicación? ###
 
@@ -22,7 +23,11 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 * Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
 * Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
 * Invocar al endpoint que lista usuarios: Get listar usuarios -> http://localhost:8080/api/user/list
-* 
+#### Metodo 2 Importar ejecutar mediante linea de comandos ####
+
+* Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
+  
+
 
 ### Who do I talk to? ###
 
