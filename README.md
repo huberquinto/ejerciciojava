@@ -16,6 +16,10 @@ realizar la descarga como zip.
 * Luego mediante linea de comandos ejecutar el siguiente comando maven: `mvn clean install`
 * Seguidamente levantar la aplicacion ejecutando: `mvn spring-boot:run`
 
+![Compilar con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto01.png)
+
+![Ejecutar la aplicacion con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto02.png)
+
 ### 3 Realizar pruebas invocando a APIs REST ###
 #### Método 1 Importar collection en postman ####
 
