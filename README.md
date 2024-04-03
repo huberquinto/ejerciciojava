@@ -14,8 +14,11 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 realizar la descarga como zip.
 ![Descagar zip con codigo fuente](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/descargar_fuentes.png)
 * Luego mediante linea de comandos ejecutar el siguiente comando maven: `mvn clean install`
+
 ![Compilar con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto01.png)
+
 * Seguidamente levantar la aplicacion ejecutando: `mvn spring-boot:run`
+
 ![Ejecutar la aplicacion con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto02.png)
 
 ### 3 Realizar pruebas invocando a APIs REST ###
@@ -30,16 +33,15 @@ realizar la descarga como zip.
 * 
 #### Método 2 ejecutar curls mediante linea de comandos ####
 
-** Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
+*Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
 
 ` curl --location 'http://localhost:8080/api/token' \
---header 'UserLogin: huberquintov'
-`
-  Obtener el valor la respuesta tokenCode, ejemplo de respuesta:
-`
-  {"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}
-` 
-** Invocar al endpoint que crear usuario copiando el valor del tokenCode al header Authorization-> http://localhost:8080/api/user/create
+--header 'UserLogin: huberquintov'`
+*Obtener el valor la respuesta tokenCode, ejemplo de respuesta:
+`{"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}`
+
+*Invocar al endpoint que crear usuario copiando el valor del tokenCode al header Authorization-> http://localhost:8080/api/user/create
+
 `curl --location 'http://localhost:8080/api/user/create' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w' \
@@ -54,9 +56,9 @@ realizar la descarga como zip.
           "countryCode": "57"
         }
     ]
-}'
-`
-** Invocar al endpoint que lista usuarios copiando el valor del tokenCode al header Authorization: -> http://localhost:8080/api/user/list
+}'`
+
+* Invocar al endpoint que lista usuarios copiando el valor del tokenCode al header Authorization: -> http://localhost:8080/api/user/list
 
 `curl --location 'http://localhost:8080/api/user/list' \
 --header 'UserLogin: huberquintov' \
