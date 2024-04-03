@@ -30,7 +30,7 @@ realizar la descarga como zip.
 `curl --location 'http://localhost:8080/api/token' \
 --header 'UserLogin: huberquintov'
   `
-* Obtener el valor la respuesta **tokenCode**, ejemplo de respuesta:
+* Obtener el valor de la respuesta **tokenCode**, ejemplo:
 `{"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}`
 
 * Invocar al endpoint que crear usuario **copiando el valor del tokenCode** al header Authorization-> http://localhost:8080/api/user/create
@@ -51,7 +51,7 @@ realizar la descarga como zip.
     ]
 }'`
 
-* Invocar al endpoint que lista usuarios copiando el valor del tokenCode al header Authorization: -> http://localhost:8080/api/user/list
+* Invocar al endpoint que lista usuarios **copiando el valor del tokenCode** al header Authorization: -> http://localhost:8080/api/user/list
 
 `curl --location 'http://localhost:8080/api/user/list' \
 --header 'UserLogin: huberquintov' \
