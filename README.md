@@ -22,27 +22,12 @@ realizar la descarga como zip.
 ![Ejecutar la aplicacion con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto02.png)
 
 ### 3 Realizar pruebas invocando a APIs REST ###
-#### Método 1 Importar collection en postman ####
 
-* Importar collection postman: HuberQuinto_EjercicioJava.postman_collection_v1.json
-
-![Importat postman collection](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman00.png)
-
-* Crear un enviroment en postman llamado HFQV_ENVIROMENT y registrar la variable HFQV_TOKEN
-  ![Crear enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_2.png)
-* Verificar el test del endpoint que genera el token donde se asigna el valor a la variable creada.   
-  ![Registrar variable en enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_1.png)
+#### Método 1 ejecutar curls mediante linea de comandos ####
+NOTA: Los curls de prueba se ubica en el archivo: * curls_de_prueba.txt
 * Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
-  ![Generar token](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01.png)
-* Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
-  ![Crear usuario](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman02.png)
-* Invocar al endpoint que lista usuarios: Get listar usuarios -> http://localhost:8080/api/user/list
-  ![Listar usuario](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman03.png)
 
-#### Método 2 ejecutar curls mediante linea de comandos ####
-NOTA: Los curls de prueba se ubica en el archivo: curls_de_prueba.txt
-* Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
-  `curl --location 'http://localhost:8080/api/token' \
+`curl --location 'http://localhost:8080/api/token' \
 --header 'UserLogin: huberquintov'
   `
 * Obtener el valor la respuesta tokenCode, ejemplo de respuesta:
@@ -72,9 +57,27 @@ NOTA: Los curls de prueba se ubica en el archivo: curls_de_prueba.txt
 --header 'UserLogin: huberquintov' \
 --header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w'
 `
-* A continuación ejemplo de ejecucion
+* A continuación ejemplo de ejecucion en terminal Linux
 
 ![Prueba con curl](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebas_curl01.png)
+
+#### Método 2 Importar collection en postman ####
+
+* Importar collection postman: HuberQuinto_EjercicioJava.postman_collection_v1.json
+
+![Importat postman collection](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman00.png)
+
+* Crear un enviroment en postman llamado HFQV_ENVIROMENT y registrar la variable HFQV_TOKEN
+  ![Crear enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_2.png)
+* Verificar el test del endpoint que genera el token donde se asigna el valor a la variable creada.   
+  ![Registrar variable en enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_1.png)
+* Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
+  ![Generar token](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01.png)
+* Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
+  ![Crear usuario](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman02.png)
+* Invocar al endpoint que lista usuarios: Get listar usuarios -> http://localhost:8080/api/user/list
+  ![Listar usuario](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman03.png)
+
 
 ### 4 Datos finales ###
 
