@@ -13,7 +13,7 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 * En una carpeta del tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
 realizar la descarga como zip.
 ![Descagar zip con codigo fuente](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/descargar_fuentes.png)
-* Luego mediante linea de comandos ejecutar el siguiente comando maven: `mvn clean install`
+* Descomprimir el zip y ubicarse dentro de la carpeta **ejerciciojava**. Luego mediante linea de comandos ejecutar: `mvn clean install`
 
 ![Compilar con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto01.png)
 
