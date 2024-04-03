@@ -21,7 +21,8 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 * Registrar en este envorment la variable HFQV_TOKEN.
 * Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
 * Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
-* Other guidelines
+* Invocar al endpoint que lista usuarios: Get listar usuarios -> http://localhost:8080/api/user/list
+* 
 
 ### Who do I talk to? ###
 
