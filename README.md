@@ -28,12 +28,12 @@ realizar la descarga como zip.
 
 ![Importat postman collection](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman00.png)
 
-* Crear un enviroment llamado HFQV_ENVIROMENT
-  ![Crear enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01.png)
-* Registrar en este envorment la variable HFQV_TOKEN.
+* Crear un enviroment en postman llamado HFQV_ENVIROMENT y registrar la variable HFQV_TOKEN
+  ![Crear enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_2.png)
+* Verificar el test del endpoint que genera el token donde se asigna el valor a la variable creada.   
   ![Registrar variable en enviroment](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_1.png)
 * Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
-  ![Generar token](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01_2.png)
+  ![Generar token](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman01.png)
 * Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
   ![Crear usuario](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman02.png)
 * Invocar al endpoint que lista usuarios: Get listar usuarios -> http://localhost:8080/api/user/list
