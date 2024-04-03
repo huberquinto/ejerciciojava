@@ -1,0 +1,33 @@
+
+1)  Obtener tokens
+------------------------
+curl --location 'http://localhost:8080/api/token' \
+--header 'UserLogin: huberquintov'
+
+
+2)  Crear usuario
+------------------------
+
+curl --location 'http://localhost:8080/api/user/create' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w' \
+--header 'UserLogin: huberquintov' \
+--data-raw '{
+    "name": "Pablo Juarez",
+    "email": "pablor4@juarez.org",
+    "password": "12376543",
+    "phones": [
+        {"number": "9968979371",
+          "cityCode": "1",
+          "countryCode": "57"
+        }
+    ]
+}'
+
+
+3)  Listar usuarios
+------------------------
+curl --location 'http://localhost:8080/api/user/list' \
+--header 'UserLogin: huberquintov' \
+--header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w'
+

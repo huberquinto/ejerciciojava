@@ -40,12 +40,11 @@ realizar la descarga como zip.
   ![Listar usuario](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman03.png)
 
 #### Método 2 ejecutar curls mediante linea de comandos ####
-
+NOTA: Los curls de prueba se ubica en el archivo: curls_de_prueba.txt
 * Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
-
-` curl --location 'http://localhost:8080/api/token' \
---header 'UserLogin: huberquintov'`
-
+  `curl --location 'http://localhost:8080/api/token' \
+--header 'UserLogin: huberquintov'
+  `
 * Obtener el valor la respuesta tokenCode, ejemplo de respuesta:
 `{"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}`
 
@@ -73,6 +72,10 @@ realizar la descarga como zip.
 --header 'UserLogin: huberquintov' \
 --header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w'
 `
+* A continuación ejemplo de ejecucion
+
+![Prueba con curl](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebas_curl01.png)
+
 ### 4 Datos finales ###
 
 * Se adjunta en el proyecto el diagrama solicitado: HuberQuinto_Creacion_Usuarios.jpg
