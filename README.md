@@ -1,26 +1,26 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+El presente documento es una guia para probar el Ejercicio Java de creación de usuario.
 
-### What is this repository for? ###
+### Requisitos para levantar la aplicación ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Tener instalado Java JDK 17
+* Tener installado Maven
+* Tener instalado git para descargar fuentes.
 
-### How do I get set up? ###
+### Pasos para levantar la aplicación? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* En una carpeta del tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
+* Luego mediante linea de comandos ejecutar el siguiente comando maven:  mvn clean install
+* Seguidamente levantar la aplicacion ejecutando: mvn spring-boot:run
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
+### Realizar pruebas invocando a APIs REST ###
+#### Metodo 1 Importar collection en postman ####
+* Importar collection: HuberQuinto_EjercicioJava.postman_collection_v1.json
+* Crear un enviroment llamado HFQV_ENVIROMENT
+* Registrar en este envorment la variable HFQV_TOKEN.
+* Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
+* Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
 * Other guidelines
 
 ### Who do I talk to? ###
