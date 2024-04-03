@@ -6,17 +6,15 @@ El presente documento es una guia para probar el Ejercicio Java de creación de 
 
 * Tener instalado Java JDK 17 [https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html]
 * Tener installado Maven 3.6.0+ [https://maven.apache.org/docs/history.html]
-* Tener instalado git para descargar fuentes. [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
 * Tener instalado el comando curl [https://curl.se/windows/] en linux ejecutar comando: sudo apt-get install curl
 
 ### 2 Pasos para levantar la aplicación? ###
 
 * En una carpeta del tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
 realizar la descarga como zip.
-
 ![Descagar zip con codigo fuente](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/descargar_fuentes.png)
-* Luego mediante linea de comandos ejecutar el siguiente comando maven:  mvn clean install
-* Seguidamente levantar la aplicacion ejecutando: mvn spring-boot:run
+* Luego mediante linea de comandos ejecutar el siguiente comando maven: `mvn clean install`
+* Seguidamente levantar la aplicacion ejecutando: `mvn spring-boot:run`
 
 ### 3 Realizar pruebas invocando a APIs REST ###
 #### Método 1 Importar collection en postman ####
