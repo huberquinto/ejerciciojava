@@ -24,16 +24,16 @@ realizar la descarga como zip.
 ### 3 Realizar pruebas invocando a APIs REST ###
 
 #### Método 1 ejecutar curls mediante linea de comandos ####
-NOTA: Los curls de prueba se ubica en el archivo: * curls_de_prueba.txt
+**NOTA**: Los curls de prueba se ubica en el archivo: **curls_de_prueba.txt**
 * Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
 
 `curl --location 'http://localhost:8080/api/token' \
 --header 'UserLogin: huberquintov'
   `
-* Obtener el valor la respuesta tokenCode, ejemplo de respuesta:
+* Obtener el valor la respuesta **tokenCode**, ejemplo de respuesta:
 `{"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}`
 
-* Invocar al endpoint que crear usuario copiando el valor del tokenCode al header Authorization-> http://localhost:8080/api/user/create
+* Invocar al endpoint que crear usuario **copiando el valor del tokenCode** al header Authorization-> http://localhost:8080/api/user/create
 
 `curl --location 'http://localhost:8080/api/user/create' \
 --header 'Content-Type: application/json' \
