@@ -1,29 +1,64 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+El presente documento es una guia para probar el Ejercicio Java de creación de usuario.
 
-### What is this repository for? ###
+### Requisitos para levantar la aplicación ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Tener instalado Java JDK 17 [https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html]
+* Tener installado Maven 3.6.0 + [https://maven.apache.org/docs/history.html]
+* Tener instalado git para descargar fuentes. [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
+* Tener instalado el comando curl [https://curl.se/windows/] o en lunux ejecutar comando: sudo apt-get install curl
 
-### How do I get set up? ###
+### Pasos para levantar la aplicación? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* En una carpeta del tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
+* Luego mediante linea de comandos ejecutar el siguiente comando maven:  mvn clean install
+* Seguidamente levantar la aplicacion ejecutando: mvn spring-boot:run
 
-### Contribution guidelines ###
+### Realizar pruebas invocando a APIs REST ###
+#### Metodo 1 Importar collection en postman ####
+* Importar collection: HuberQuinto_EjercicioJava.postman_collection_v1.json
+* Crear un enviroment llamado HFQV_ENVIROMENT
+* Registrar en este envorment la variable HFQV_TOKEN.
+* Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
+* Invocar al endpoint que crear usuario: Post crear usuario -> http://localhost:8080/api/user/create
+* Invocar al endpoint que lista usuarios: Get listar usuarios -> http://localhost:8080/api/user/list
+#### Metodo 2 Importar ejecutar mediante linea de comandos ####
 
-* Writing tests
-* Code review
-* Other guidelines
+* Invocar al endpoint que genera token Nombre HFQV-Token -> http://localhost:8080/api/token
 
-### Who do I talk to? ###
+  curl --location 'http://localhost:8080/api/token' \
+--header 'UserLogin: huberquintov'
 
-* Repo owner or admin
-* Other community or team contact
+  Obtener el valor la respuesta tokenCode, ejemplo de respuesta:
+  {"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}
+  
+* Invocar al endpoint que crear usuario copiando el valor del tokenCode al header Authorization-> http://localhost:8080/api/user/create
+
+curl --location 'http://localhost:8080/api/user/create' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w' \
+--header 'UserLogin: huberquintov' \
+--data-raw '{
+    "name": "Pablo Juarez",
+    "email": "pablor4@juarez.org",
+    "password": "12376543",
+    "phones": [
+        {"number": "9968979371",
+          "cityCode": "1",
+          "countryCode": "57"
+        }
+    ]
+}'
+
+* Invocar al endpoint que lista usuarios copiando el valor del tokenCode al header Authorization: -> http://localhost:8080/api/user/list
+
+curl --location 'http://localhost:8080/api/user/list' \
+--header 'UserLogin: huberquintov' \
+--header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w'
+
+### Datos finales ###
+
+* Se adjunta en el proyecto el diagrama solicitado: HuberQuinto_Creacion_Usuarios.jpg
+* Se adjunta la coleccion postman HuberQuinto_EjercicioJava.postman_collection_v1.json para probar la API Rest creada
+* Dentro del proyecto a comentarios TODO dado que no alcanzo tiempo.
