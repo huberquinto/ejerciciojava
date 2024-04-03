@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "Get data",
+			"name": "Get listar usuarios",
 			"event": [
 				{
 					"listen": "test",
@@ -26,11 +26,6 @@
 			"request": {
 				"method": "GET",
 				"header": [
-					{
-						"key": "",
-						"value": "",
-						"type": "text"
-					},
 					{
 						"key": "UserLogin",
 						"value": "huberquintov",
@@ -60,7 +55,7 @@
 			"response": []
 		},
 		{
-			"name": "Post data",
+			"name": "Post crear usuario",
 			"event": [
 				{
 					"listen": "test",
