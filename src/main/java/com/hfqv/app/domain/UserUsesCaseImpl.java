@@ -158,11 +158,11 @@ public class UserUsesCaseImpl implements UserPort {
 
     @Override
     public void delete(String userId) {
-
+        // TODO
     }
 
     @Override
     public void update(UserDataMessage userDataMessage) {
-
+        // TODO
     }
 }
