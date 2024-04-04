@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+/**
+ * @author Huber Quinto Vargas
+ */
 @Component
 public class PhonePortImpl implements PhonePort {
     private static final Logger logger = LoggerFactory.getLogger(PhonePortImpl.class);

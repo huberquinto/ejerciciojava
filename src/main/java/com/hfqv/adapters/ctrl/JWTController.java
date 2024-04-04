@@ -9,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+/**
+ * @author Huber Quinto Vargas
+ */
 @RestController
 @RequestMapping("/api")
 public class JWTController {
-
     private static final Logger logger = LoggerFactory.getLogger(JWTController.class);
-
     @Autowired
     private JWTUtil jWTUtil;
 

@@ -32,7 +32,7 @@
 						"type": "text"
 					},
 					{
-						"key": "Authorization",
+						"key": "HAuthorization",
 						"value": "{{HFQV_TOKEN}}",
 						"type": "text"
 					}
@@ -80,7 +80,7 @@
 						"type": "text"
 					},
 					{
-						"key": "Authorization",
+						"key": "HAuthorization",
 						"value": "{{HFQV_TOKEN}}",
 						"type": "text"
 					},

@@ -16,7 +16,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
+/**
+ * @author Huber Quinto Vargas
+ */
 @Component("userRepositoryPortImpl")
 public class UserRepositoryPortImpl implements UserRepositoryPort {
     private static final Logger logger = LoggerFactory.getLogger(UserRepositoryPortImpl.class);

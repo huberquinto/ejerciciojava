@@ -16,6 +16,9 @@ import com.hfqv.app.domain.util.JWTUtil;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author Huber Quinto Vargas
+ */
 @RestController
 @RequestMapping("/api/user")
 public class UserRestController {
@@ -27,8 +30,8 @@ public class UserRestController {
     private JWTUtil jWTUtil;
 
     @PostMapping(value = "/create", consumes = "application/json",produces ="application/json")
-    public ResponseEntity<Object> createUser(@RequestHeader("Authorization") String authorization,
-                                             @RequestHeader("UserLogin") String userLogin,
+    public ResponseEntity<Object> createUser(@RequestHeader(name = "HAuthorization", required = true) String authorization,
+                                             @RequestHeader(name = "UserLogin",required = true) String userLogin,
                                              @RequestBody CreateUserData createUserData){
 
         ResponseMessage responseMessage = new ResponseMessage();
@@ -58,7 +61,7 @@ public class UserRestController {
     @GetMapping(value="/list", produces = "application/json")
     public ResponseEntity<Object> listUsers(
             @RequestHeader("UserLogin") String userLogin,
-            @RequestHeader("Authorization") String authorization){
+            @RequestHeader(name = "HAuthorization", required = true) String authorization){
 
         ResponseMessage responseMessage = new ResponseMessage();
         try{

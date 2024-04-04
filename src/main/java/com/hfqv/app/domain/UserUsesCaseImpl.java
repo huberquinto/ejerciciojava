@@ -16,6 +16,9 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author Huber Quinto Vargas
+ */
 @Component("userUsesCaseImpl")
 public class UserUsesCaseImpl implements UserPort {
 
