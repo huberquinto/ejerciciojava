@@ -39,7 +39,7 @@ realizar la descarga como zip.
 
 ![Prueba swagger 03](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaswagger03.png)
 
-* Invocar al endpoint que crear usuario **copiando el valor del tokenCode** al header HAuthorization y **huberquintov** en el header UserLogin.
+* Invocar al endpoint que crear usuario copiando el valor del **tokenCode** al header HAuthorization y 'huberquintov' en el header UserLogin.
 
 ![Prueba swagger 04](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaswagger04.png)
 
@@ -47,7 +47,7 @@ realizar la descarga como zip.
 
 ![Prueba swagger 05](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaswagger05.png)
 
-* Invocar al endpoint que lista usuarios **copiando el valor del tokenCode** al header HAuthorization y **huberquintov** en el header UserLogin.
+* Invocar al endpoint que lista usuarios copiando el valor del **tokenCode** al header HAuthorization y 'huberquintov' en el header UserLogin.
 
 ![Prueba swagger 06](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaswagger06.png)
 
@@ -67,7 +67,7 @@ realizar la descarga como zip.
 * Obtener el valor de la respuesta **tokenCode**, ejemplo:
 `{"tokenCode":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodWJlcnF1aW50b3YiLCJleHAiOjE3MTIxNjU2MjF9.mLtNZmNzJ6MOjImADx_JkBM9ILcYAdwfD2WRQxwgMyaQpyykeWEOPr_MpwrfeDSjdujea0Ol5elgCCHEZ3m31w"}`
 
-* Invocar al endpoint que crear usuario **copiando el valor del tokenCode** al header HAuthorization-> http://localhost:8080/api/user/create
+* Invocar al endpoint que crear usuario copiando el valor del **tokenCode** al header HAuthorization-> http://localhost:8080/api/user/create
 
 `curl --location 'http://localhost:8080/api/user/create' \
 --header 'Content-Type: application/json' \
@@ -85,7 +85,7 @@ realizar la descarga como zip.
     ]
 }'`
 
-* Invocar al endpoint que lista usuarios **copiando el valor del tokenCode** al header HAuthorization: -> http://localhost:8080/api/user/list
+* Invocar al endpoint que lista usuarios copiando el valor del **tokenCode** al header HAuthorization: -> http://localhost:8080/api/user/list
 
 `curl --location 'http://localhost:8080/api/user/list' \
 --header 'UserLogin: huberquintov' \
@@ -97,8 +97,8 @@ realizar la descarga como zip.
 
 #### Método 3 Importar collection en postman ####
 
-* Importar collection postman: HuberQuinto_EjercicioJava.postman_collection_v1.json
-**NOTA**: Reemplazar en los header el Authorization por HAuthorization
+* Importar collection postman: **HuberQuinto_EjercicioJava.postman_collection_v1.json**
+**NOTA**: Reemplazar en los header el Authorization por **HAuthorization**
 
 ![Importat postman collection](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/pruebaspostman00.png)
 
@@ -116,9 +116,9 @@ realizar la descarga como zip.
 
 ### 4 NOTAS finales ###
 
-* Se adjunta en el proyecto el diagrama solicitado: HuberQuinto_Creacion_Usuarios.jpg
+* Se adjunta en el proyecto el diagrama solicitado: **HuberQuinto_Creacion_Usuarios.jpg**
   ![Ejecutar la aplicacion con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/HuberQuinto_Creacion_Usuarios.jpg)
-* Se adjunta la coleccion postman HuberQuinto_EjercicioJava.postman_collection_v1.json para probar la API Rest creada
-* Dentro del proyecto a comentarios TODO dado que no alcanzo tiempo.
-* No se comparte scripts sql de creacion de tablas porque utilice una base de datos en memria H2 el cual genera automaticamente las tablas.
+* Se adjunta la coleccion postman **HuberQuinto_EjercicioJava.postman_collection_v1.json** para probar la API Rest creada
+* Dentro del proyecto a comentarios **TODO** dado que no alcanzo tiempo.
+* No se comparte scripts sql de creacion de tablas porque utilice una base de datos en memoria H2 el cual genera automaticamente las tablas.
 * Se puede hacer varias mejoras, por ejemplo solo se agrego swagger basico para facilitar las pruebas.
