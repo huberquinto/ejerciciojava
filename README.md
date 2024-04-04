@@ -11,10 +11,10 @@ las tablas User y Phone con las relaciones que se definio mediante JPA.
 
 ### 2 Pasos para levantar la aplicación ###
 
-* En una carpeta del tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
+* En una carpeta de tu file system descargar las fuentes desde : https://github.com/huberquinto/ejerciciojava
 realizar la descarga como zip.
 ![Descagar zip con codigo fuente](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/descargar_fuentes.png)
-* Descomprimir el zip y ubicarse dentro de la carpeta **ejerciciojava**. Luego mediante linea de comandos ejecutar: `mvn clean install`
+* Descomprimir el zip y ubicarse dentro de la carpeta **ejerciciojava-main**. Luego mediante linea de comandos ejecutar: `mvn clean install`
 
 ![Compilar con maven](https://github.com/huberquinto/ejerciciojava/blob/main/imagenes/levantar_proyecto01.png)
 
