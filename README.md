@@ -1,8 +1,7 @@
 # README #
 
 El presente documento es una guia para probar el Ejercicio Java de creación de usuario.
-Se desarrollo con Java 17 y Spring boot. Se utiliza la base de datos en memoria H2 que crea automaticamente
-las tablas User y Phone con las relaciones que se definio mediante JPA.
+Se desarrollo con Java 17 y Spring boot. Ademas se oriento la aplicacion a una arquitectura hexagonal usando ports y adapters. Ademas, se utiliza la base de datos en memoria H2 que crea automaticamente las tablas User y Phone con las relaciones que se definio mediante JPA.
 
 ### 1 Requisitos para levantar la aplicación ###
 
